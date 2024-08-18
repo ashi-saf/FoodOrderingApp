@@ -8,7 +8,7 @@ export function MenuContextProvider({ children }) {
   const [token, setToken] = useState('');
   const [food_list, setFood_list] = useState([]);
 
-  const url = 'http://localhost:4000';
+  const url = "https://foodorderingapp-backend-3fih.onrender.com";
   async function addToCart(itemId) {
     if (!cartItems[itemId]) {
       setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
