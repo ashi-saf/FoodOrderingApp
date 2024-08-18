@@ -4,7 +4,7 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 //place user order from frontend
 const placeOrder = async (req, res) => {
-  const frontEndUrl = 'http://localhost:5173';
+  const frontEndUrl = "https://foodorderingapp-frontend-1hgv.onrender.com/";
   const { userId, items, amount, address, paymentMethod } = req.body;
   try {
     if (!paymentMethod) {
